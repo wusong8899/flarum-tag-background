@@ -2,5 +2,7 @@ wusong8899-tag-background:
   forum:
     save-error: 保存错误
   admin:
-    set-background: 设置背景图
+    set-background: 设置背景
     item-background-url: 背景图片地址
+    save: 保存
+    cancel: 取消

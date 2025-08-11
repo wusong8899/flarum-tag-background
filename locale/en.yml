@@ -4,3 +4,5 @@ wusong8899-tag-background:
   admin:
     set-background: Set Background
     item-background-url: Background URL
+    save: Save
+    cancel: Cancel

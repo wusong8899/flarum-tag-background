@@ -41,7 +41,7 @@ export default class DecorationStorePurchaseModal extends Modal {
                   this.saveData();
                 }
               },
-              app.translator.trans('wusong8899-custom-index-page.lib.save')
+              app.translator.trans('wusong8899-tag-background.admin.save')
             )}&nbsp;
             {Button.component(
               {
@@ -52,7 +52,7 @@ export default class DecorationStorePurchaseModal extends Modal {
                   this.hide();
                 }
               },
-              app.translator.trans('wusong8899-custom-index-page.lib.cancel')
+              app.translator.trans('wusong8899-tag-background.admin.cancel')
             )}
           </div>
         </div>

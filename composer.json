@@ -4,7 +4,8 @@
     "type": "flarum-extension",
     "license": "MIT",
     "require": {
-        "flarum/core": "^1.0"
+        "flarum/core": "1.8.10",
+        "flarum/tags": "1.8.4"
     },
     "support": {
         "issues": "https://github.com/wusong8899/flarum-tag-background/issues",
