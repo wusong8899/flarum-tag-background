@@ -2,7 +2,7 @@ import Modal from 'flarum/components/Modal';
 import Button from 'flarum/components/Button';
 import Stream from 'flarum/utils/Stream';
 
-export default class DecorationStorePurchaseModal extends Modal {
+export default class SetBackgroundModal extends Modal {
   static isDismissibleViaBackdropClick = false;
   static isDismissibleViaCloseButton = true;
 
