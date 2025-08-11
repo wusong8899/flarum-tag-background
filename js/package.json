@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@wusong8899/flarum-daily-check-in",
+  "name": "@wusong8899/flarum-tag-background",
   "devDependencies": {
     "flarum-webpack-config": "3.0.2",
     "webpack": "5.101.0",
