@@ -1,0 +1,35 @@
+{
+    "name": "wusong8899/flarum-tag-background",
+    "description": "A Flarum extension. ",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0"
+    },
+    "support": {
+        "issues": "https://github.com/wusong8899/flarum-tag-background/issues",
+        "source": "https://github.com/wusong8899/flarum-tag-background"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "wusong8899\\tagBackground\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wusong8899"
+        }
+    ],
+    "extra": {
+        "flarum-extension": {
+            "title": "wusong8899 Tag Background",
+            "icon": {
+                "name": "fas fa-images",
+                "backgroundColor": "#68238c",
+                "color": "#fff"
+            }
+        }
+    }
+}
