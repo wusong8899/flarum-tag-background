@@ -14,18 +14,15 @@ function applyTagBackgrounds(root: Element | null) {
     if (!link) return;
 
     let slug: string | null = null;
-    try {
-      const url = new URL(link.href, window.location.origin);
-      // Flarum tags routes are typically /t/:slug or /tags/:slug
-      const parts = url.pathname.split('/').filter(Boolean);
-      const tIndex = parts.indexOf('t');
-      const tagsIndex = parts.indexOf('tags');
-      if (tIndex !== -1 && parts[tIndex + 1]) slug = parts[tIndex + 1];
-      else if (tagsIndex !== -1 && parts[tagsIndex + 1]) slug = parts[tagsIndex + 1];
-      else if (parts.length > 0) slug = parts[parts.length - 1];
-    } catch (e) {
-      // ignore parsing errors
-    }
+
+    const url = new URL(link.href, window.location.origin);
+    // Flarum tags routes are typically /t/:slug or /tags/:slug
+    const parts = url.pathname.split('/').filter(Boolean);
+    const tIndex = parts.indexOf('t');
+    const tagsIndex = parts.indexOf('tags');
+    if (tIndex !== -1 && parts[tIndex + 1]) slug = parts[tIndex + 1];
+    else if (tagsIndex !== -1 && parts[tagsIndex + 1]) slug = parts[tagsIndex + 1];
+    else if (parts.length > 0) slug = parts[parts.length - 1];
 
     if (!slug) return;
 
