@@ -7,6 +7,9 @@
         "flarum/core": "1.8.10",
         "flarum/tags": "1.8.4"
     },
+    "suggest": {
+        "wusong8899/client1-header-adv": "Provides enhanced TagTiles layout that this extension can apply backgrounds to"
+    },
     "support": {
         "issues": "https://github.com/wusong8899/flarum-tag-background/issues",
         "source": "https://github.com/wusong8899/flarum-tag-background"
@@ -30,7 +33,10 @@
                 "name": "fas fa-images",
                 "backgroundColor": "#68238c",
                 "color": "#fff"
-            }
+            },
+            "optional-dependencies": [
+                "wusong8899/client1-header-adv"
+            ]
         }
     }
 }

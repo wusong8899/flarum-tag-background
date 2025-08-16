@@ -5,7 +5,8 @@
     "flarum-tsconfig": "^1.0.0",
     "flarum-webpack-config": "^2.0.0",
     "oxlint": "^1.11.2",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "vite-plugin-oxlint": "^1.4.0"
   },
   "scripts": {
     "dev": "vite -c vite.config.admin.mts build --mode development && vite -c vite.config.forum.mts build --mode development",

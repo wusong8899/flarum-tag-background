@@ -24,7 +24,7 @@ export default class SettingsPage extends ExtensionPage {
     });
   }
 
-  content(vnode: Mithril.VnodeDOM<unknown, this>): JSX.Element {
+  content(_vnode: Mithril.VnodeDOM<unknown, this>): JSX.Element {
     if (this.loading) {
       return <LoadingIndicator />;
     }
