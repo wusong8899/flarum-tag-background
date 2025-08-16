@@ -11,10 +11,10 @@ function applyTagBackgrounds(root: Element | null) {
     applyBackgroundToTagTile(tile as HTMLElement);
   });
 
-  // Handle swiper-based layout from client1-header-adv extension
-  const swiperSlides = root.querySelectorAll('.swiper-slide-tag');
-  swiperSlides.forEach((slide) => {
-    applyBackgroundToSwiperSlide(slide as HTMLElement);
+  // Handle splide-based layout from client1-header-adv extension
+  const splideSlides = root.querySelectorAll('.splide__slide-tag');
+  splideSlides.forEach((slide) => {
+    applyBackgroundToSplideSlide(slide as HTMLElement);
   });
 }
 
@@ -50,9 +50,9 @@ function applyBackgroundToTagTile(li: HTMLElement) {
   }
 }
 
-function applyBackgroundToSwiperSlide(slide: HTMLElement) {
+function applyBackgroundToSplideSlide(slide: HTMLElement) {
   const link = slide.querySelector('a') as HTMLAnchorElement | null;
-  const innerDiv = slide.querySelector('.swiper-slide-tag-inner, .swiper-slide-tag-inner-mobile') as HTMLElement | null;
+  const innerDiv = slide.querySelector('.splide__slide-tag-inner, .splide__slide-tag-inner-mobile') as HTMLElement | null;
 
   if (!link || !innerDiv) return;
 
