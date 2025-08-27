@@ -57,16 +57,15 @@ export default class SettingsPage extends ExtensionPage {
 
                   {!wusong8899BackgroundURL && (
                     <div className="tagBackgroundImage">
-                      {Button.component(
-                        {
-                          style: 'min-width: 66px;font-size: 12px;font-weight: normal;',
-                          className: 'Button',
-                          onclick: () => {
-                            app.modal.show(SetBackgroundModal, { tagData });
-                          },
-                        },
-                        app.translator.trans('wusong8899-tag-background.admin.set-background')
-                      )}
+                      <Button
+                        style="min-width: 66px;font-size: 12px;font-weight: normal;"
+                        className="Button"
+                        onclick={() => {
+                          app.modal.show(SetBackgroundModal, { tagData });
+                        }}
+                      >
+                        {app.translator.trans('wusong8899-tag-background.admin.set-background')}
+                      </Button>
                     </div>
                   )}
                 </div>

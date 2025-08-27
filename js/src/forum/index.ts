@@ -11,11 +11,14 @@ function applyTagBackgrounds(root: Element | null) {
     applyBackgroundToTagTile(tile as HTMLElement);
   });
 
-  // Handle splide-based layout from client1-header-adv extension
+  // Handle legacy splide-based layout (for backward compatibility)
   const splideSlides = root.querySelectorAll('.splide__slide-tag');
   splideSlides.forEach((slide) => {
     applyBackgroundToSplideSlide(slide as HTMLElement);
   });
+
+  // Note: TagGlide from client1-header-adv now handles tag backgrounds directly
+  // via the component's view method, so no DOM manipulation is needed for it
 }
 
 function applyBackgroundToTagTile(li: HTMLElement) {
